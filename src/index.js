@@ -56,10 +56,10 @@ root.render(
       <Route path="/profile-page" exact element={<ProfilePage />} />
       <Route path="/register-page" exact element={<RegisterPage />} />
       <Route path="/reset-page" exact element={<ResetPage />} />
-      <Route path="/" element={<Navigate to="/presentation" replace />} />
 
       <Route path="/UploadPage" exact element={<UploadPage />} />
       <Route path="/test" exact element={<Test />} />
+      <Route path="/" element={<Navigate to="/Test" replace />} />
 
     </Routes>
   </BrowserRouter>
