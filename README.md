@@ -1,9 +1,5 @@
 # [AI Cloth](https://github.com/TellyXu/cloth) 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/TellyXu/cloth.svg?maxAge=2592000)](https://github.com/TellyXu/cloth/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/TellyXu/cloth.svg?maxAge=2592000)](https://github.com/TellyXu/cloth/issues?q=is%3Aissue+is%3Aclosed) 
-
-
-
-[![Join the chat](https://img.shields.io/badge/chat-on_wechat-green)](weixin://dl/chat?Telly_Xu)
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/TellyXu/cloth.svg?maxAge=2592000)](https://github.com/TellyXu/cloth/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/TellyXu/cloth.svg?maxAge=2592000)](https://github.com/TellyXu/cloth/issues?q=is%3Aissue+is%3Aclosed)[![Join the chat](https://img.shields.io/badge/chat-on_wechat-green)](weixin://dl/chat?Telly_Xu)
 
 
 a front end webpage with Bootstrap 4, React, Reactstrap and React Hooks. 

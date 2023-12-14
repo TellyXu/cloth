@@ -46,6 +46,7 @@ import PreFooter1 from "components/pre-footers/PreFooter1.js";
 import backgroundImage from "assets/img/ill/p8.svg";
 import "assets/css/nucleo-svg.css";
 import "assets/css/nucleo-icons.css";
+import "views/examples/Test.css"
 
 function CustomPage() {
 
@@ -237,19 +238,21 @@ function CustomPage() {
                       <Upload onImageUpload={handleImageUpload}/>
                     </Col>
                     <Col md="8">
-                      <Selection title="Gender" options={genderOptions} value={gender} onChange={setGender} />
-                      <Selection title="Age Range" options={ageRangeOptions} value={ageRange} onChange={setAgeRange} />
-                      <Selection title="Race" options={raceOptions} value={race} onChange={setRace} />
-                      <Selection title="Height and Body Type" options={heightBodyTypeOptions} value={heightBodyType} onChange={setHeightBodyType} />
-                      <Selection title="Size" options={sizeOptions} value={size} onChange={setSize} />
-                      <Selection title="Background Atmosphere" options={backgroundOptions} value={background} onChange={setBackground} />
-                      <Selection title="Pose" options={poseOptions} value={pose} onChange={setPose} />
-                      <Selection title="Expression" options={expressionOptions} value={expression} onChange={setExpression} />
-                      <Selection title="Accessory" options={accessoryOptions} value={accessory} onChange={setAccessory} />
-                      <Selection title="Main Light Source" options={lightSourceOptions} value={lightSource} onChange={setLightSource} />
-                      <Selection title="Tone" options={toneOptions} value={tone} onChange={setTone} />
-                      <Selection title="Resolution" options={resolutionOptions} value={resolution} onChange={setResolution} />
-                      <Selection title="Clothing Type" options={clothingOptions} value={clothing} onChange={setClothing} />
+                      <div className="dropdown-grid">
+                        <Selection title="Gender" options={genderOptions} value={gender} onChange={setGender} />
+                        <Selection title="Age Range" options={ageRangeOptions} value={ageRange} onChange={setAgeRange} />
+                        <Selection title="Race" options={raceOptions} value={race} onChange={setRace} />
+                        <Selection title="Height and Body Type" options={heightBodyTypeOptions} value={heightBodyType} onChange={setHeightBodyType} />
+                        <Selection title="Size" options={sizeOptions} value={size} onChange={setSize} />
+                        <Selection title="Background Atmosphere" options={backgroundOptions} value={background} onChange={setBackground} />
+                        <Selection title="Pose" options={poseOptions} value={pose} onChange={setPose} />
+                        <Selection title="Expression" options={expressionOptions} value={expression} onChange={setExpression} />
+                        <Selection title="Accessory" options={accessoryOptions} value={accessory} onChange={setAccessory} />
+                        <Selection title="Main Light Source" options={lightSourceOptions} value={lightSource} onChange={setLightSource} />
+                        <Selection title="Tone" options={toneOptions} value={tone} onChange={setTone} />
+                        <Selection title="Resolution" options={resolutionOptions} value={resolution} onChange={setResolution} />
+                        <Selection title="Clothing Type" options={clothingOptions} value={clothing} onChange={setClothing} />
+                      </div>
                     </Col>
                   </Row>
                   <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
