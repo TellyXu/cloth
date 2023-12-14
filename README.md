@@ -6,7 +6,8 @@
 [![Join the chat](https://img.shields.io/badge/chat-on_wechat-green)](weixin://dl/chat?Telly_Xu)
 
 
-Start your development with a **Premium Argon Design System for Bootstrap 4, React, Reactstrap and React Hooks**. It combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics.
+a front end webpage with Bootstrap 4, React, Reactstrap and React Hooks. 
+It combines colors that are easy on the eye, spacious cards, beautiful typography, and graphics.
 
 
 ## Table of contents
