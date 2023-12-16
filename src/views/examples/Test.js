@@ -231,7 +231,6 @@ function CustomPage() {
                           color="info"
                           onClick={handleSubmit}
                       >
-
                       <span className="btn-inner--icon">
                         {/* Embed SVG Icon */}
                         <svg xmlns="http://www.w3.org/2000/svg" height="12" width="12" viewBox="0 0 12 12" className="ni">
