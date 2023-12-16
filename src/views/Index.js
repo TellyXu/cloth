@@ -58,6 +58,7 @@ function Index() {
       document.body.classList.remove("index-page");
     };
   });
+
   return (
     <>
       <DemoNavbar type="transparent" />
