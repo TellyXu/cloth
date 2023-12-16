@@ -7,6 +7,7 @@ import { Container, Row, Button } from "reactstrap";
 import DemoNavbar from "components/navbars/DemoNavbar.js";
 import DemoFooter from "components/footers/DemoFooter.js";
 import HeaderIndex from "components/headers/HeaderIndex.js";
+
 // Demo Sections for this page
 import Buttons from "components/index-page/Buttons.js";
 import Inputs from "components/index-page/Inputs.js";
