@@ -179,7 +179,6 @@ function CustomPage() {
   return (
       <>
         <DemoNavbar type="transparent" />
-
         <div className="wrapper">
           <Button
               className="btn-icon-only back-to-top show"
