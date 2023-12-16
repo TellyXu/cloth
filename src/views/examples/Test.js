@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // reactstrap components
-import {Container, Row, Button, Col, Badge} from "reactstrap";
+import {Container, Row, Button, Col} from "reactstrap";
 
 // Core Components
 import DemoNavbar from "components/navbars/DemoNavbar.js";
