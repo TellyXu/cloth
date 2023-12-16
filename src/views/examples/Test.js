@@ -39,7 +39,7 @@ function CustomPage() {
   };
 
 
-  // 定义状态变量
+  // Define state variables
   const [gender, setGender] = useState("Gender");
   const [ageRange, setAgeRange] = useState("Age Range");
   const [race, setRace] = useState("Race");
