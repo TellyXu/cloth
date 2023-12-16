@@ -54,7 +54,7 @@ function CustomPage() {
   const [resolution, setResolution] = useState("Resolution");
   const [clothing, setClothing] = useState("Clothing Type");
 
-  // 选项列表
+  // Option List
   const genderOptions = [
     { label: 'Male', value: 'Male' },
     { label: 'Female', value: 'Female' }
@@ -233,7 +233,7 @@ function CustomPage() {
                       >
 
                       <span className="btn-inner--icon">
-                        {/* 嵌入SVG图标 */}
+                        {/* Embed SVG Icon */}
                         <svg xmlns="http://www.w3.org/2000/svg" height="12" width="12" viewBox="0 0 12 12" className="ni">
                           <title>send message</title>
                           <g fill="#ffffff" className="nc-icon-wrapper">
@@ -250,7 +250,6 @@ function CustomPage() {
               </Container>
             </div>
           </div>
-
 
 
           <Carousel />
