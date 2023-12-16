@@ -1,5 +1,12 @@
 # Change Log
 
+
+## [1.0.3] 2023-12-16
+
+- Enhance page aesthetics  
+- Eliminate warnings
+
+
 ## [1.0.2] 2023-12-14
 
 - Update dependencies

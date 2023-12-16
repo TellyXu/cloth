@@ -6,6 +6,7 @@ import {Container, Row, Button, Col} from "reactstrap";
 // Core Components
 import DemoNavbar from "components/navbars/DemoNavbar.js";
 import DemoFooter from "components/footers/DemoFooter.js";
+
 // Demo Sections for this page
 import Carousel from "components/index-page/Carousel.js";
 import NucleoIcons from "components/index-page/NucleoIcons.js";
