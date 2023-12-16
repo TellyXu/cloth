@@ -20,7 +20,6 @@ import "views/examples/Test.css"
 
 function CustomPage() {
 
-
   // State to track the uploaded image
   const [uploadedImage, setUploadedImage] = useState(null);
 
