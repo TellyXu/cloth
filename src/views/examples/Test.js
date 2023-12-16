@@ -250,8 +250,6 @@ function CustomPage() {
               </Container>
             </div>
           </div>
-
-
           <Carousel />
           <NucleoIcons />
           <DemoFooter />
