@@ -38,7 +38,6 @@ function CustomPage() {
     }
   };
 
-
   // Define state variables
   const [gender, setGender] = useState("Gender");
   const [ageRange, setAgeRange] = useState("Age Range");
