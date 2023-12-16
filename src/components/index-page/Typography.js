@@ -45,7 +45,7 @@ function Typography() {
             </Col>
             <Col sm="9">
               <Heading className={"mb-0 display-" + prop}>
-                Argon Design System PRO
+                AI Cloth by Tianli
               </Heading>
             </Col>
           </Row>
