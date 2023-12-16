@@ -224,6 +224,7 @@ function CustomPage() {
                       </div>
                     </Col>
                   </Row>
+
                   <div style={{ display: 'flex', justifyContent: 'center', margin: '20px 0' }}>
                     <div className="btn-wrapper mt-5">
                       <Button
