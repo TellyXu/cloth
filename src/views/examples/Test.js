@@ -245,7 +245,6 @@ function CustomPage() {
                       </Button>
                     </div>
                   </div>
-
                 </div>
               </Container>
             </div>
