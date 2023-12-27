@@ -40,7 +40,6 @@ import FileUpload from "components/index-page/FileUpload.js";
 import Carousel from "components/index-page/Carousel.js";
 import NucleoIcons from "components/index-page/NucleoIcons.js";
 
-
 function Index() {
   React.useEffect(() => {
     document.body.classList.add("index-page");
@@ -149,5 +148,6 @@ function Index() {
     </>
   );
 }
+
 
 export default Index;
