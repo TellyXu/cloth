@@ -59,7 +59,6 @@ root.render(
       <Route path="/UploadPage" exact element={<UploadPage />} />
       <Route path="/test" exact element={<Test />} />
       <Route path="/" element={<Navigate to="/Test" replace />} />
-
     </Routes>
   </BrowserRouter>
 );
