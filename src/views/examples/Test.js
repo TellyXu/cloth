@@ -18,6 +18,7 @@ import "assets/css/nucleo-svg.css";
 import "assets/css/nucleo-icons.css";
 import "views/examples/Test.css"
 
+
 function CustomPage() {
 
   // State to track the uploaded image
