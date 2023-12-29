@@ -32,7 +32,6 @@ import UploadPage from "./views/examples/UploadPage";
 import Test from "./views/examples/Test";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-
 root.render(
   <BrowserRouter>
     <Routes>
