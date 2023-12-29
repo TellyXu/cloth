@@ -58,6 +58,7 @@ root.render(
       <Route path="/reset-page" exact element={<ResetPage />} />
       <Route path="/UploadPage" exact element={<UploadPage />} />
       <Route path="/test" exact element={<Test />} />
+      <Route path="/Price" exact element={<Test />} />
       <Route path="/" element={<Navigate to="/Test" replace />} />
     </Routes>
   </BrowserRouter>
