@@ -18,6 +18,9 @@ import "assets/css/nucleo-svg.css";
 import "assets/css/nucleo-icons.css";
 import "views/examples/Test.css"
 
+
+import { saveAs } from 'file-saver'; // 确保安装了 file-saver 库
+
 function CustomPage() {
 
   // State to track the uploaded image
@@ -25,24 +28,83 @@ function CustomPage() {
 
   // Function to handle image upload (to be used in your Upload component)
   const handleImageUpload = (image) => {
+    console.log("Image being uploaded:", image); // Check if the image is received
     setUploadedImage(image); // Assuming 'image' is the uploaded image data
   };
 
   // Function to handle submit click
   const handleSubmit = () => {
-    if (uploadedImage) {
-      console.log("Image uploaded:", uploadedImage);
-      // Perform your submit actions here
-    } else {
+    console.log("Current uploadedImage state:", uploadedImage); // Check the state
+    if (!uploadedImage) {
       alert("Please upload an image before submitting.");
+      return;
     }
+
+    console.log("Image uploaded:", uploadedImage);
+
+    // Save Image
+    if (uploadedImage instanceof File) {
+      saveAs(uploadedImage, uploadedImage.name);
+    } else {
+      console.error("Uploaded image is not a file.");
+    }
+
+
+  // Create the JSON object
+    const data = {
+      modelCharacteristics: {
+        gender: gender,
+        age: ageRange,
+        race: race,
+        height: parseInt(Height),
+        bodyShape: bodyShape,
+        bodySize: size,
+      },
+      environmentSetting: {
+        background: background,
+        lighting: lightSource, // Modify as needed to fit your schema
+      },
+      poseAndExpression: {
+        pose: pose,
+        expression: expression,
+      },
+      accessories: {
+        items: [accessory], // Adjust if multiple accessories can be selected
+      },
+      lightSourceAndTone: {
+        mainLight1: lightSource, // Modify as needed
+        mainLight2: "", // Add your logic
+        additionalMainLights: "", // Add your logic
+        tone: tone,
+      },
+      quality: {
+        pixel: resolution,
+      },
+      portraitType: {
+        body: "", // Add your logic
+      },
+      generalSetting: {
+        consistency: true, // Modify as needed
+        hoodless: true, // Modify as needed
+      },
+    };
+    console.log("Creating JSON for:", {gender, ageRange, race, Height, bodyShape, size, background, lightSource, pose, expression, accessory, tone, resolution, clothing});
+
+    // Save JSON
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: "application/json" });
+    console.log("Saving JSON Blob:", blob);
+    saveAs(blob, "options.json");
+
   };
+
 
   // Define state variables
   const [gender, setGender] = useState("Gender");
   const [ageRange, setAgeRange] = useState("Age Range");
   const [race, setRace] = useState("Race");
-  const [heightBodyType, setHeightBodyType] = useState("Height and Body Type");
+  const [Height, setHeight] = useState("Height");
+  const [BodyType, setBodyType] = useState("Body Type");
+  const [bodyShape, setBodyShape] = useState("Body Shape");
   const [size, setSize] = useState("Size");
   const [background, setBackground] = useState("Background Atmosphere");
   const [pose, setPose] = useState("Pose");
@@ -72,14 +134,27 @@ function CustomPage() {
     { label: 'Native American', value: 'Native American' },
     { label: 'Multiracial or Mixed Race', value: 'Multiracial or Mixed Race' }
   ];
-  const heightBodyTypeOptions = [
-    { label: 'Short - Slim', value: 'Short - Slim' },
-    { label: 'Short - Bulky', value: 'Short - Bulky' },
-    { label: 'Average - Slim', value: 'Average - Slim' },
-    { label: 'Average - Bulky', value: 'Average - Bulky' },
-    { label: 'Tall - Slim', value: 'Tall - Slim' },
-    { label: 'Tall - Bulky', value: 'Tall - Bulky' }
+
+  const HeightOptions=[
+    {label: '170', value: '170' },
+    {label: '175', value: '175' },
+    {label: '180', value: '180' },
+    {label: '185', value: '185' },
+    {label: '190', value: '190' },
+  ]
+
+  const BodyTypeOptions = [
+    { label: 'Slim', value: 'Slim' },
+    { label: 'Bulky', value: 'Bulky' },
   ];
+
+    const bodyShapeOptions = [
+      { label: 'Ectomorph', value: 'Ectomorph' },
+      { label: 'Mesomorph', value: 'Mesomorph' },
+      { label: 'Endomorph', value: 'Endomorph' },
+      { label: 'CombinationType', value: 'CombinationType' }
+    ];
+
   const sizeOptions = [
     { label: 'S', value: 'S' },
     { label: 'M', value: 'M' },
@@ -203,14 +278,16 @@ function CustomPage() {
                 <div className="col px-0">
                   <Row className="align-items-center justify-content-center">
                     <Col md="4">
-                      <Upload onImageUpload={handleImageUpload}/>
+                      <Upload onImageSelected={handleImageUpload}/>
                     </Col>
                     <Col md="8">
                       <div className="dropdown-grid">
                         <Selection title="Gender" options={genderOptions} value={gender} onChange={setGender} />
                         <Selection title="Age Range" options={ageRangeOptions} value={ageRange} onChange={setAgeRange} />
                         <Selection title="Race" options={raceOptions} value={race} onChange={setRace} />
-                        <Selection title="Height and Body Type" options={heightBodyTypeOptions} value={heightBodyType} onChange={setHeightBodyType} />
+                        <Selection title="Height" options={HeightOptions} value={Height} onChange={setHeight} />
+                        <Selection title="Body Type" options={BodyTypeOptions} value={BodyType} onChange={setBodyType} />
+                        <Selection title="Body Shape" options={bodyShapeOptions} value={bodyShape} onChange={setBodyShape} />
                         <Selection title="Size" options={sizeOptions} value={size} onChange={setSize} />
                         <Selection title="Background Atmosphere" options={backgroundOptions} value={background} onChange={setBackground} />
                         <Selection title="Pose" options={poseOptions} value={pose} onChange={setPose} />

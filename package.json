@@ -9,13 +9,14 @@
     "@testing-library/react": "14.0.0",
     "@testing-library/user-event": "14.4.3",
     "choices.js": "10.2.0",
+    "file-saver": "^2.0.5",
     "headroom.js": "0.12.0",
     "moment": "2.29.4",
     "nouislider": "15.4.0",
     "prop-types": "15.8.1",
-    "react": "18.2.0",
+    "react": ">=16.0.0",
     "react-datetime": "3.2.0",
-    "react-dom": "18.2.0",
+    "react-dom": ">=16.0.0",
     "react-github-button": "0.1.11",
     "react-google-maps": "9.4.5",
     "react-router-dom": "6.11.1",
@@ -52,9 +53,9 @@
     "react-dom": ">=16.0.0"
   },
   "optionalDependencies": {
-    "typescript": "5.0.4",
     "@types/googlemaps": "3.39.11",
-    "@types/markerclustererplus": "2.1.33"
+    "@types/markerclustererplus": "2.1.33",
+    "typescript": "5.0.4"
   },
   "overrides": {
     "svgo": "3.0.2"
