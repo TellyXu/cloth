@@ -50,7 +50,6 @@ function Presentation() {
         <BasicComponents />
         <Cards />
         <Content />
-
         <Sections />
         <Examples />
         <Patterns />
