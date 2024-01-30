@@ -17,7 +17,6 @@ class ImageUpload extends React.Component {
     this.handleRemove = this.handleRemove.bind(this);
   }
 
-
   handleImageChange(e) {
     e.preventDefault();
     let reader = new FileReader();
