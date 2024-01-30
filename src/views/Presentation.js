@@ -22,7 +22,7 @@ import Icons from "components/presentation-page/Icons.js";
 import Features from "components/presentation-page/Features.js";
 import Testimonials from "components/presentation-page/Testimonials.js";
 import Pricing from "components/presentation-page/Pricing.js";
-
+// import UploadPage from "views/examples/UploadPage.js";
 function Presentation() {
   React.useEffect(() => {
     document.body.classList.add("presentation-page");
