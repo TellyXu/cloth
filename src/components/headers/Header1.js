@@ -19,6 +19,7 @@ import {
 function Header1() {
   return (
     <>
+
       <header className="header-1">
         <Navbar className="bg-default navbar-absolute" expand="lg">
           <Container>
