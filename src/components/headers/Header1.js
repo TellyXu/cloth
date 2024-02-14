@@ -26,7 +26,7 @@ function Header1() {
               className="text-white"
               href="/index"
             >
-              Argon
+              Argonn
             </NavbarBrand>
             <button
               aria-controls="navbar-header-1"
