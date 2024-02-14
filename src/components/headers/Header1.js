@@ -41,7 +41,7 @@ function Header1() {
             </button>
             <UncontrolledCollapse
               id="navbar-header-1"
-              navbarr
+              navbar
               toggler="#navbar-header-1"
             >
               <div className="navbar-collapse-header">
