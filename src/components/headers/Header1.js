@@ -54,7 +54,6 @@ function Header1() {
                       />
                     </Link>
                   </Col>
-
                   <Col className="collapse-close" xs="6">
                     <button
                       aria-controls="navbar-header-1"
