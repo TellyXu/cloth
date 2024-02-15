@@ -127,7 +127,6 @@ function Header1() {
             </UncontrolledCollapse>
           </Container>
         </Navbar>
-
       </header>
     </>
   );
